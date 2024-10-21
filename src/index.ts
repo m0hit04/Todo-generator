@@ -6,7 +6,6 @@ app.use('*', cors());
 
 app.get('/', (c) => {
   let randomTodos = []
-  console.log("hic");
   for (let i = 0; i < todos.length; i++) {
     if (Math.random() > 0.5) {
       randomTodos.push(todos[i]);
@@ -17,4 +16,4 @@ app.get('/', (c) => {
   });
 })
 
-export default app
+export default app;
